@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  background-color: #FBFFC1;
+  background-color: #FFEDDE;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -85,7 +85,7 @@ html, body{
 }
 
 .navbar-inner {
-    background-image: linear-gradient(to right, #E82A69, #E8AEC1, #E82A69);
+    background-image: linear-gradient(to right, #FFA094, #FFE3BD,  #FFA094);
     background-repeat: repeat-x;
     
     border-style:solid;
@@ -118,7 +118,7 @@ html, body{
 #sofia {
 /*   background-color: #F143FA; */
   /*background-color: #E82A69;*/
-  background-color: #E82A69;
+  background-color: #FFA094;
   border-radius: 15px;
   padding: 5px 0 10px 0px;
   
@@ -130,13 +130,13 @@ html, body{
   border-radius: 5px;
 }
 #gradient-div1 {
-  background-image: linear-gradient(to bottom, #E82A69, #E8AEC1,  #E82A69);
+  background-image: linear-gradient(to bottom, #FFA094, #FFE3BD,  #FFA094);
   width: inherit;
   margin-top: -10px;
   margin-bottom: -12px;
 }
 #gradient-div2 {
-  background-image: linear-gradient(to bottom, #E82A69, #E8AEC1,  #E82A69);
+  background-image: linear-gradient(to bottom, #FFA094, #FFE3BD,  #FFA094);
   width: inherit;
   margin-top: -10px;
   margin-bottom: -3px;
@@ -162,7 +162,7 @@ html, body{
 }
 
 #submenu1 {
-  background-color: #F193FA;
+  background-color: #FFCDBD;
   border-radius: 15px;
   margin-top: 5px;
   padding: 5px 0 10px 10px;
@@ -179,7 +179,7 @@ html, body{
 }
 
 #submenu2 {
-  background-color: #F193FA;
+  background-color: #FFCDBD;
   border-radius: 15px;
   margin-top: 5px;
   padding: 5px 0 10px 10px;
@@ -401,7 +401,7 @@ list-style-image: url('pictures/train_icon.jpg');
 
 #footer {
   margin-top: 50px;
-  background-image: linear-gradient(to bottom, #FBFFC1, #E82A69);
+  background-image: linear-gradient(to bottom, #FFEDDE, #FFA094);
   margin-left: -10px;
   margin-right: -10px;
 }
