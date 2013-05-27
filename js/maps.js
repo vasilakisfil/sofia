@@ -11,7 +11,7 @@ var kotsovolosMarker = new google.maps.Marker({
     map: map,
     icon: {
       url: "js/kotsos.png",
-      scaledSize: new google.maps.Size(100,70)
+      scaledSize: new google.maps.Size(90,60)
     },
     zIndex: 0,
     title: "Κωτσόβολος"
@@ -135,7 +135,7 @@ var SxoleiaOptions = {
         ,textAlign: "left"
         ,fontSize: "8pt"
         ,margin: "-10px 0 0 0"
-        ,padding: "4px 16px 15px 35px"
+        ,padding: "4px 56px 15px 35px"
        }
       ,disableAutoPan: true
       ,pixelOffset: new google.maps.Size(-25, 0)
