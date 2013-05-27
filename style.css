@@ -1,0 +1,418 @@
+
+/************************* GENERAL ******************************/
+
+
+/*
+html {
+  height: 100%;
+  font-family: Arial !important;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* FF strange error 
+  font: inherit !important;
+}*/
+
+body {
+
+}
+
+.my-wrapper {
+  margin-top: 20px;
+}
+
+.container {
+  background-color: #FBFFC1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+html, body{
+  background-image:url(pictures/bg1.png); 
+  background-position:left top;
+  background-repeat:repeat;
+  
+}
+
+
+/* general assets */
+.small {
+  font-size: 11pt;
+  line-height: 150%;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.addlineheight {
+  margin-bottom: 5px;
+}
+
+.opacity {
+  filter:alpha(opacity=50); /*IE*/
+  opacity: 0.5;
+
+}
+
+.infoBox{
+  opacity: 0.4; 
+}
+
+#infoBoxText {
+  font-weight: 900;
+}
+
+
+/*****************  MENU ********************/
+
+.nav {
+  font-size: 1.5em;
+}
+
+.restnav {
+/*   margin-top: 9px; */
+}
+
+/* fix that */
+.restnavtext {
+  color: #333333 !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+.navbar-inner {
+    background-image: linear-gradient(to right, #E82A69, #E8AEC1, #E82A69);
+    background-repeat: repeat-x;
+    
+    border-style:solid;
+    border-width:2px;
+    border-color: #333333;
+    border-radius: 5px;
+}
+
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
+
+
+
+/************************* PAGE SPECIFIC *******************************/
+
+/************************* index.html **********************************/
+
+/* side under menu */
+#sofia {
+/*   background-color: #F143FA; */
+  /*background-color: #E82A69;*/
+  background-color: #E82A69;
+  border-radius: 15px;
+  padding: 5px 0 10px 0px;
+  
+  text-align: center;
+  
+  border-style:solid;
+  border-width:2px;
+  border-color: #333333;
+  border-radius: 5px;
+}
+#gradient-div1 {
+  background-image: linear-gradient(to bottom, #E82A69, #E8AEC1,  #E82A69);
+  width: inherit;
+  margin-top: -10px;
+  margin-bottom: -12px;
+}
+#gradient-div2 {
+  background-image: linear-gradient(to bottom, #E82A69, #E8AEC1,  #E82A69);
+  width: inherit;
+  margin-top: -10px;
+  margin-bottom: -3px;
+}
+
+#sofianame-titles {
+/*   margin-bottom: 50px; */
+}
+
+#sofianame {
+  font-size: 120%;
+}
+
+#sofiatitles {
+  font-size: 80%;
+}
+
+#sofiasubtitles {
+  font-size: 105%;
+}
+
+#sofiasubsubtitles {
+}
+
+#submenu1 {
+  background-color: #F193FA;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 5px 0 10px 10px;
+
+  border-style:solid;
+  border-width:2px;
+  border-color: #333333;
+  border-radius: 5px;
+  
+}
+
+#submenu1 h5 {
+  font-size: 119%;
+}
+
+#submenu2 {
+  background-color: #F193FA;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 5px 0 10px 10px;
+  text-align: center;
+  
+  border-style:solid;
+  border-width:2px;
+  border-color: #333333;
+  border-radius: 5px;
+}
+
+#submenu2 h5 {
+  font-size: 119%;
+}
+
+.alertbox {
+  color: black;
+  font-size: 95%
+  text-align: center;
+}
+
+.sumvoules {
+  color: black;
+  font-size: 95%
+  text-align: center;
+}
+
+
+/*********************** contact.html **********************************/
+
+#directions {
+  font-size: 12pt;
+}
+
+#image_map {
+  width: 100%;
+}
+
+#map_side {
+  margin-left: 70px;
+}
+
+.divheight {
+  margin-bottom: -14px;
+}
+
+#car {
+list-style-image: url('pictures/rsz_car_icon.jpg');
+}
+
+#bus {
+list-style-image: url('pictures/bus.png');
+}
+
+#train {
+list-style-image: url('pictures/train_icon.jpg');
+}
+
+
+/********************** apnoia.html ************************************/
+#sofia_side {
+  font-size: 9pt;
+  margin-left: 30px;
+  margin-right: -40px;
+  background-color: #F193FA;
+  border-radius: 15px;
+  margin-top: 5px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+
+  hyphens: auto
+}
+
+
+
+/********************** resume.html ************************************/
+#sofiaphoto {
+  border-style:solid;
+  border-width:2px;
+  border-color: #333333;
+  border-radius: 5px;
+}
+
+
+/********************** gnathologos.html ************************************/
+#under_construction {
+  text-align: center;
+}
+
+/********************** iatreio.html ************************************/
+#spansofianame {
+  font-size: 16px;
+}
+
+#spansofiarest {
+  font-size: 13px;
+}
+
+/********************** initial page ***********************************/
+
+/* Navbar links: increase padding for taller navbar */
+/*
+.navbar .nav > li > a {
+  padding: 20px 15px;
+  margin-bottom: -10px;
+  font-size: 16pt;
+}
+*/
+
+/*
+
+
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  vertical-align: top;
+}
+
+
+
+
+.restnavtext {
+  color: #333333;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+#test {
+  color: #333333;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.navbar-inner {
+  text-align:center;
+  font-size: 16pt;
+
+}
+
+
+/*
+.navbar-inner {
+  background-color: #FFA8F0;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}/
+
+
+*/
+
+
+/******************************* REST *************************************/
+
+
+
+.plaino {
+  font-size: 11pt;
+  line-height: 150%;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+
+
+
+
+
+
+#gallery {
+  padding-left: 20px;
+}
+
+
+.fixedImg img {
+  width: auto;
+  height: 325px;
+  max-height: 325px;
+}
+
+#fixedImgApnoia img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+
+#map-canvas { 
+   height: 300px;
+   max-width: none;
+}
+
+#map-canvas img { 
+   max-width: none;
+}
+
+.infoBox {
+  background-color: white;
+}
+
+.inner-item {
+    text-align: center;
+}
+
+.inner-item img {
+    margin: 0 auto;
+}
+
+.small_header {
+  font-size: 13pt;
+}
+
+
+/******************************* footer *************************************/
+
+
+#footer {
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, #FBFFC1, #E82A69);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#footer1 {
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+#footer2 {
+  margin-top: 100px;
+  text-align: right;
+  margin-right: -10px;
+}
