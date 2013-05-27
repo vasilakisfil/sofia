@@ -148,19 +148,6 @@ var SxoleiaOptions = {
 var SxoleiaLabel = new InfoBox(SxoleiaOptions);
 
 
-var GymOptions = {
-       content: 'Κλειστό Γυμναστήριο Ηλιούπολης'
-      ,disableAutoPan: true
-      ,pixelOffset: new google.maps.Size(-25, 0)
-      ,position: new google.maps.LatLng(37.923736,23.746737)
-      ,closeBoxURL: ""
-      ,isHidden: false
-      ,pane: "mapPane"
-      ,enableEventPropagation: true
-    };
-var GymLabel = new InfoBox(GymOptions);
-
-
 function initialize() {
   
   // Create the DIV to hold the control of the labels
@@ -173,17 +160,13 @@ function initialize() {
   labelsControlDiv.index = 1;
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(labelsControlDiv);
   
-  // To add the marker to the map, call setMap();
-  //IatreioLabel.open(map);
-  SxoleiaLabel.open(map);
-  //GymLabel.open(map);
-  
-
+  kotsovolosMarker.setMap(map);
   iatreioMarker.setMap(map);
   ekklhsiaMarker.setMap(map);
   eisodosMarker.setMap(map);
   metroMarker.setMap(map);
-  kotsovolosMarker.setMap(map);
+  
+  SxoleiaLabel.open(map);
   
 }
 
@@ -215,28 +198,31 @@ function LabelsControl(controlDiv, map) {
   controlText.style.fontSize = '12px';
   controlText.style.paddingLeft = '4px';
   controlText.style.paddingRight = '4px';
-  controlText.innerHTML = '<b>Απόκρυψη ετικετών</b>';
+  controlText.innerHTML = '<strong id=\"labelscontrol\">Απόκρυψη ετικετών</strong>';
   controlUI.appendChild(controlText);
 
   // Setup the click event listeners: simply set the map to
   // Chicago
   google.maps.event.addDomListener(controlUI, 'click', function() {
     if (LABELS) {
-      IatreioLabel.close();
-      SxoleiaLabel.close();
-      GymLabel.close();
       kotsovolosMarker.setMap(null);
-      metroMarker.setMap(null);
-      eisodosMarker.setMap(null);      
+      ekklhsiaMarker.setMap(null);
+      eisodosMarker.setMap(null);
+      metroMarker.setMap(null);      
+      SxoleiaLabel.close();     
       LABELS = false;
+
+      document.getElementById('labelscontrol').innerHTML ='Εμφάνιση ετικετών';
+
     } else {
-      IatreioLabel.open(map);
-      SxoleiaLabel.open(map);
-      GymLabel.open(map);
       kotsovolosMarker.setMap(map);
+      ekklhsiaMarker.setMap(map);
+      eisodosMarker.setMap(map);
       metroMarker.setMap(map);
-      eisodosMarker.setMap(map);   
+      SxoleiaLabel.open(map);  
       LABELS = true;
+      
+      document.getElementById('labelscontrol').innerHTML ='Απόκρυψη ετικετών';
     }
   });
 
