@@ -66,6 +66,12 @@ html, body{
   font-weight: 900;
 }
 
+.sweetBorder {
+  border-style:solid;
+  border-width:2px;
+  border-color: #FF6390;
+  border-radius: 5px;
+}
 
 /*****************  MENU ********************/
 
@@ -116,9 +122,7 @@ html, body{
 /************************* index.html **********************************/
 
 /* side under menu */
-#sofia {
-/*   background-color: #F143FA; */
-  /*background-color: #E82A69;*/
+/*#sofia {
   background-color: #F193FA;
   border-radius: 15px;
   padding: 5px 0 10px 0px;
@@ -141,12 +145,9 @@ html, body{
   width: inherit;
   margin-top: -10px;
   margin-bottom: -3px;
-}
+}*/
 
-#sofianame-titles {
-/*   margin-bottom: 50px; */
-}
-
+/*
 #sofianame {
   font-size: 120%;
 }
@@ -160,12 +161,12 @@ html, body{
 }
 
 #sofiasubsubtitles {
-}
+}*/
 
 #submenu1 {
   background-color: #F193FA;
   border-radius: 15px;
-  margin-top: 5px;
+  margin-top: 0px;
   padding: 5px 0 10px 10px;
 
   border-style:solid;
@@ -196,6 +197,15 @@ html, body{
   font-size: 119%;
 }
 
+#sofiaKartaMain {
+  width: 98%;
+  margin-top: 5px;
+  border-style:solid;
+  border-width:2px;
+  border-color: #FF6390;
+  border-radius: 5px;
+}
+
 .alertbox {
   color: black;
   font-size: 95%
@@ -213,9 +223,11 @@ html, body{
 }
 
 #background_logo {
-  background-image:url('pictures/sofia-logo-grey.png');
+  background-image:url('pictures/sofia-logo-grey2.png');
   background-repeat:no-repeat;
-  background-position: 37% 70%;
+  background-position: 37% 50%;
+  
+  
 }
 
 /*********************** contact.html **********************************/
@@ -226,6 +238,17 @@ html, body{
 
 #image_map {
   width: 100%;
+  border-style:solid;
+  border-width:2px;
+  border-color: #FF6390;
+  border-radius: 5px;
+}
+
+#map-canvas {
+  border-style:solid;
+  border-width:2px;
+  border-color: #FF6390;
+  border-radius: 5px;
 }
 
 #map_side {
