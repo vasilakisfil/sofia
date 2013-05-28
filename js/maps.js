@@ -7,14 +7,14 @@ var kotsovolosInfowindow = new google.maps.InfoWindow({
 });
 
 var kotsovolosMarker = new google.maps.Marker({
-    position: new google.maps.LatLng(37.923898,23.745089),
+    position: new google.maps.LatLng(37.923987,23.744797),
     map: map,
-    icon: {
-      url: "js/kotsos.png",
-      scaledSize: new google.maps.Size(90,60)
-    },
+//     icon: {
+//       url: "js/kotsos.png",
+//       scaledSize: new google.maps.Size(90,60)
+//     },
     zIndex: 0,
-    title: "Κωτσόβολος"
+    title: "Κωτσόβολος Βουλιαγμένης"
 });
 
 google.maps.event.addListener(kotsovolosMarker, 'click', function() {
@@ -113,8 +113,8 @@ google.maps.event.addListener(eisodosMarker, 'click', function() {
 
 
 var mapOptions = {
-  center: new google.maps.LatLng(37.92409,23.746119),
-  zoom: 17,
+  center: new google.maps.LatLng(37.926090,23.747119),
+  zoom: 15,
   scrollwheel: false,
   panControl: false,
   zoomControl: true,
@@ -134,12 +134,10 @@ var SxoleiaOptions = {
          border: "1px solid black"
         ,textAlign: "left"
         ,fontSize: "8pt"
-        ,margin: "-10px 0 0 0"
-        ,padding: "4px 56px 15px 35px"
        }
       ,disableAutoPan: true
       ,pixelOffset: new google.maps.Size(-25, 0)
-      ,position: new google.maps.LatLng(37.923636,23.745037)
+      ,position: new google.maps.LatLng(37.923636,23.745837)
       ,closeBoxURL: ""
       ,isHidden: false
       ,pane: "mapPane"
