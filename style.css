@@ -212,6 +212,11 @@ html, body{
   color: black; 
 }
 
+#background_logo {
+  background-image:url('pictures/sofia-logo-grey.png');
+  background-repeat:no-repeat;
+  background-position: 37% 70%;
+}
 
 /*********************** contact.html **********************************/
 
