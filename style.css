@@ -16,7 +16,6 @@ body {
 }*/
 
 body {
-
 }
 
 .my-wrapper {
@@ -24,7 +23,7 @@ body {
 }
 
 .container {
-  background-color: #DBDBDB;
+  background-color: #E3E3E3;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -69,15 +68,19 @@ html, body{
 .sweetBorder {
   border-style:solid;
   border-width:2px;
-  border-color: #FF6390;
+  border-color: #9acd32;
   border-radius: 5px;
 }
 
 .thumbnails .thumbnail:hover {
   border-style:solid;
   border-width:1px;
-  border-color: #FF6390;
+  border-color: #9acd32;
   border-radius: 5px;
+}
+
+.alignLeft {
+  text-align: left;
 }
 
 /*****************  MENU ********************/
@@ -87,8 +90,12 @@ html, body{
 }
 
 .restnav {
-   margin-top: 6px;
-   margin-bottom: 6px;
+  padding-top: 10px;
+  font-size: 100%;
+}
+
+.restnav2 {
+  font-size: 90%;
 }
 
 /* fix that */
@@ -99,12 +106,11 @@ html, body{
 }
 
 .navbar-inner {
-    background-image: linear-gradient(to right, #F193FA, #FFE8F0,  #F193FA);
-    background-repeat: repeat-x;
-    
+    background-image: linear-gradient(to right, #698b22 , #9acd32,  #698b22 );
+    /*background-image: linear-gradient(to right, #698b22 , #9acd32,  #698b22 );*/
     border-style:solid;
-    border-width:2px;
-    border-color: #FF6390;
+    border-width:4px;
+    border-color: #caff70;
     border-radius: 5px;
 }
 
@@ -128,57 +134,16 @@ html, body{
 
 /************************* index.html **********************************/
 
-/* side under menu */
-/*#sofia {
-  background-color: #F193FA;
-  border-radius: 15px;
-  padding: 5px 0 10px 0px;
-  
-  text-align: center;
-  
-  border-style:solid;
-  border-width:2px;
-  border-color: #FF6390;
-  border-radius: 5px;
-}
-#gradient-div1 {
-  background-image: linear-gradient(to bottom, #F193FA, #FFE8F0,  #F193FA);
-  width: inherit;
-  margin-top: -10px;
-  margin-bottom: -12px;
-}
-#gradient-div2 {
-  background-image: linear-gradient(to bottom, #F193FA, #FFE8F0,  #F193FA);
-  width: inherit;
-  margin-top: -10px;
-  margin-bottom: -3px;
-}*/
-
-/*
-#sofianame {
-  font-size: 120%;
-}
-
-#sofiatitles {
-  font-size: 80%;
-}
-
-#sofiasubtitles {
-  font-size: 105%;
-}
-
-#sofiasubsubtitles {
-}*/
-
 #submenu1 {
-  background-color: #F193FA;
+  background-image: linear-gradient(to right, #698b22 , #9acd32,  #698b22);
+  /*background-color: #E33969;*/
   border-radius: 15px;
   margin-top: 0px;
   padding: 5px 0 10px 10px;
 
   border-style:solid;
-  border-width:2px;
-  border-color: #FF6390;
+  border-width:4px;
+  border-color: #caff70;
   border-radius: 5px;
   
 }
@@ -187,16 +152,18 @@ html, body{
   font-size: 119%;
 }
 
+
+
 #submenu2 {
-  background-color: #F193FA;
+  background-image: linear-gradient(to right, #698b22 , #9acd32,  #698b22);
   border-radius: 15px;
   margin-top: 5px;
   padding: 5px 0 10px 10px;
   text-align: center;
   
   border-style:solid;
-  border-width:2px;
-  border-color: #FF6390;
+  border-width:4px;
+  border-color: #9acd32;
   border-radius: 5px;
 }
 
@@ -208,8 +175,8 @@ html, body{
   width: 98%;
   margin-top: 5px;
   border-style:solid;
-  border-width:2px;
-  border-color: #FF6390;
+  border-width:4px;
+  border-color: #9acd32;
   border-radius: 5px;
 }
 
@@ -230,12 +197,19 @@ html, body{
 }
 
 #background_logo {
-  background-image:url('pictures/sofia-logo-grey2.png');
+  background-image:url('pictures/sofia-logo-grey-opaque.png');
   background-repeat:no-repeat;
   background-position: 37% 50%;
-  
-  
 }
+
+#mainSubTitle {
+  letter-spacing: 2px;
+}
+
+#customHeight {
+  height: 1500px;
+}
+
 
 /*********************** contact.html **********************************/
 
@@ -247,19 +221,31 @@ html, body{
   width: 100%;
   border-style:solid;
   border-width:2px;
-  border-color: #FF6390;
+  border-color: #9acd32;
   border-radius: 5px;
 }
 
 #map-canvas {
+  height: 400px;
+  max-width: none;
+
   border-style:solid;
   border-width:2px;
-  border-color: #FF6390;
+  border-color: #9acd32;
   border-radius: 5px;
+}
+
+#map-canvas img { 
+   max-width: none;
 }
 
 #map_side {
   margin-left: 70px;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
 }
 
 .divheight {
@@ -299,7 +285,7 @@ list-style-image: url('pictures/train_icon.jpg');
 #sofiaphoto {
   border-style:solid;
   border-width:2px;
-  border-color: #FF6390;
+  border-color: #000000;
   border-radius: 5px;
 }
 
@@ -410,15 +396,6 @@ list-style-image: url('pictures/train_icon.jpg');
   max-height: 225px;
 }
 
-#map-canvas { 
-   height: 300px;
-   max-width: none;
-}
-
-#map-canvas img { 
-   max-width: none;
-}
-
 .infoBox {
   background-color: white;
 }
@@ -441,7 +418,7 @@ list-style-image: url('pictures/train_icon.jpg');
 
 #footer {
   margin-top: 50px;
-  background-image: linear-gradient(to bottom, #DBDBDB, #F193FA);
+  background-image: linear-gradient(to bottom, #E3E3E3, #9acd32);
   margin-left: -10px;
   margin-right: -10px;
 }
