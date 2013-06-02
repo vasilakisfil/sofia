@@ -193,7 +193,7 @@ html, body{
 }
 
 .mainLink {
-  color: black; 
+  color: #3D5C3F; 
 }
 
 #background_logo {
@@ -202,13 +202,27 @@ html, body{
   background-position: 37% 50%;
 }
 
+#mainTitle {
+  color: #536A8A;
+}
 #mainSubTitle {
   letter-spacing: 2px;
+  color: #418DF0;
 }
 
 #customHeight {
-  height: 1500px;
+  margin-top: -20px;
 }
+
+#customMargin1 {
+  margin-bottom: 2px;
+}
+
+#customMargin2 {
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
 
 
 /*********************** contact.html **********************************/
@@ -384,16 +398,44 @@ list-style-image: url('pictures/train_icon.jpg');
 }
 
 
-.fixedImg img {
-  width: auto;
-  height: 325px;
-  max-height: 325px;
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
 }
 
+
+
+#fixedImgGnathologos img {
+  max-height: 180px;
+}
 #fixedImgApnoia img {
-  width: auto;
   height: 225px;
-  max-height: 225px;
+}
+#fixedImgAorata img {
+  height: 146px;
+}
+#fixedImgPaidia img {
+  height: 160px;
+}
+
+
+#main_carousel img {
+  width: auto;
+  height: 337px;
+  max-height: 337px;
 }
 
 .infoBox {
@@ -405,7 +447,7 @@ list-style-image: url('pictures/train_icon.jpg');
 }
 
 .inner-item img {
-    margin: 0 auto;
+     margin: 0 auto; 
 }
 
 .small_header {
