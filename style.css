@@ -83,6 +83,11 @@ html, body{
   text-align: left;
 }
 
+.therapeiaMargin {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 /*****************  MENU ********************/
 
 .nav {
@@ -199,15 +204,19 @@ html, body{
 #background_logo {
   background-image:url('pictures/sofia-logo-grey-opaque.png');
   background-repeat:no-repeat;
-  background-position: 37% 50%;
+  background-position: 42% 73%;
+  background-size: 48%;
 }
 
 #mainTitle {
+  letter-spacing: 1.5px;
   color: #536A8A;
+  margin-bottom: 15px;
 }
 #mainSubTitle {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: #418DF0;
+  font-weight: 600;
 }
 
 #customHeight {
@@ -284,7 +293,7 @@ list-style-image: url('pictures/train_icon.jpg');
   font-size: 9pt;
   margin-left: 30px;
   margin-right: -40px;
-  background-color: #F193FA;
+  background-color: #B9EB65;
   border-radius: 15px;
   margin-top: 5px;
   text-align: center;
@@ -301,6 +310,11 @@ list-style-image: url('pictures/train_icon.jpg');
   border-width:2px;
   border-color: #000000;
   border-radius: 5px;
+}
+
+#resumeTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -459,7 +473,7 @@ list-style-image: url('pictures/train_icon.jpg');
 
 
 #footer {
-  margin-top: 50px;
+  margin-top: 15px;
   background-image: linear-gradient(to bottom, #E3E3E3, #9acd32);
   margin-left: -10px;
   margin-right: -10px;

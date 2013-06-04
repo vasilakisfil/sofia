@@ -1,6 +1,14 @@
 var LABELS = true;
 var map;
 
+var pinColor = "B6E6A5";
+var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+	new google.maps.Size(21, 34),
+	new google.maps.Point(0,0),
+	new google.maps.Point(10, 34));
+
+
+
 var kotsovolosInfowindow = new google.maps.InfoWindow({
     content: "Κωτσόβολος Βουλιαγμένης",
     maxWidth: 200
@@ -13,6 +21,7 @@ var kotsovolosMarker = new google.maps.Marker({
 //       url: "js/kotsos.png",
 //       scaledSize: new google.maps.Size(90,60)
 //     },
+	icon: pinImage,
     zIndex: 0,
     title: "Κωτσόβολος Βουλιαγμένης"
 });
@@ -34,6 +43,7 @@ var polukladikaMarker = new google.maps.Marker({
 //       url: "js/kotsos.png",
 //       scaledSize: new google.maps.Size(90,60)
 //     },
+	icon: pinImage,
     zIndex: 0,
     title: "Πρώην Πολυκλαδικά Σχολεία Ηλιούπολης"
 });
@@ -55,7 +65,7 @@ var iatreioMarker = new google.maps.Marker({
     map: map,
     zIndex: 9999,
     icon: {
-      url: "js/pink-pushpin.png",
+      url: "js/red-pushpin.png",
       scaledSize: new google.maps.Size(30,35)
     },
     title: "Ορθοδοντικό - Γναθολογικό Ιατρείο Σ. Μαυρουδή"
@@ -118,6 +128,7 @@ var eisodosInfowindow = new google.maps.InfoWindow({
 var eisodosMarker = new google.maps.Marker({
     position: new google.maps.LatLng(37.923827,23.744369),
     map: map,
+	icon: pinImage,
     title: "Γ' είσοδος Ηλιούπολης"
 });
 
